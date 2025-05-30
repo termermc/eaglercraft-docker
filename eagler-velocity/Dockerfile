@@ -24,7 +24,7 @@ RUN ["sh", "-c", "wget $( wget -q -O- 'https://hangar.papermc.io/api/v1/projects
 RUN ["sh", "-c", "wget $( wget -q -O- 'https://hangar.papermc.io/api/v1/projects/ViaRewind/versions?limit=1&offset=0&channel=Release&channel=Snapshot&platform=PAPER&platform=WATERFALL&platform=VELOCITY&includeHiddenChannels=true' | jq -r .result[0].downloads.VELOCITY.downloadUrl )"]
 RUN ["sh", "-c", "wget $( wget -q -O- 'https://hangar.papermc.io/api/v1/projects/SkinsRestorer/versions?limit=1&offset=0&channel=Release&channel=Snapshot&platform=PAPER&platform=WATERFALL&platform=VELOCITY&includeHiddenChannels=true' | jq -r .result[0].downloads.PAPER.downloadUrl )"]
 
-FROM docker.io/amazoncorretto:17-al2-full
+FROM docker.io/amazoncorretto:21-al2-full
 
 WORKDIR /data/
 COPY --from=downloader /data/ .
