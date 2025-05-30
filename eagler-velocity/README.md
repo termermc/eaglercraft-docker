@@ -14,6 +14,6 @@ It is also tuned for performance on Linux. If you want to run on another operati
 
 Run `docker compose up -d` to start the server.
 
---
+---
 
 The above steps should be done manually the first time, but subsequent runs can be condensed to just `./build.sh && ./hostinit.sh && docker compose up -d`.
