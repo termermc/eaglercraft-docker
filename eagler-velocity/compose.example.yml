@@ -9,6 +9,8 @@ services:
             network: host
             context: .
 
+        restart: always
+
         ports:
          - "25565:25565"
 
