@@ -4,4 +4,4 @@
 
 # EaglercraftXServer
 
-See [eaglerxserver/README.md](eaglerxserver/README.md).
+See [eaglerxserver](eaglerxserver/).
